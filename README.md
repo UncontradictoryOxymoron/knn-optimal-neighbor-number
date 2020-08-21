@@ -1,5 +1,5 @@
 # knn-optimal-neighbor-number
-import matplotlib.pyplot as plt
+```import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
@@ -14,5 +14,5 @@ for number in optimized_N_N:
   knn = KNeighborsClassifier(n_neighbors=number)
   knn.fit(X_train, y_train)
   print('Number of neighbors: ' + str(number) + ' | Accuracy Percentage: ' + str(knn.score(X_test, y_test)))
-
+```
 # this works with either an sklearn dataset, or a numpy array (I think), so because of that for this program you need to specify your dataset
